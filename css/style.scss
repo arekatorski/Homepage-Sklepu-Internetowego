@@ -1,0 +1,382 @@
+@import "colors.scss";
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+
+    .top {
+        background-image: $gradient;
+        text-align: center;
+
+        div {
+            padding-top: 8px;
+        }
+    }
+}
+
+nav {
+    padding: 12px;
+
+    a {
+        padding: 10px;
+    }
+}
+
+img {
+    object-fit: cover;
+}
+
+#logo {
+    width: 20%;
+
+}
+
+#menu {
+    width: 50%;
+    margin-top: 10px;
+}
+
+#options {
+    width: 30%;
+
+    div {
+        display: inline;
+        margin: 10px;
+    }
+}
+
+.baner {
+    background-color: $hero-bg;
+    margin-bottom: 12vh;
+
+    img {
+        border-radius: 0 350px 350px 0;
+        width: 90%;
+        height: 60vh;
+    }
+
+    .row>div {
+        &:last-child {
+            padding-top: 8%;
+        }
+    }
+}
+
+button {
+    border-radius: 30px;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    background-color: $button-primary;
+
+}
+
+button:hover {
+    background-color: $button-secondary;
+    color: $text;
+}
+
+.secondButton {
+    border-radius: 30px;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    background-color: $button-secondary;
+    color: white;
+}
+
+.secondButton:hover {
+    background-color: $button-primary;
+    color: $dark-text;
+}
+
+.dogs {
+    margin-bottom: 12vh;
+
+    .row>div {
+        background-image: url("../img/srednipies.png");
+        background-size: cover;
+        padding-top: 200px;
+        color: white;
+        font-size: 37px;
+        text-align: center;
+        height: 500px;
+
+        &:first-child {
+            background-image: url("../img/malypies.png");
+        }
+
+        &:last-child {
+            background-image: url("../img/duzypies.png");
+        }
+    }
+}
+
+.bestsellers {
+    margin-bottom: 12vh;
+    padding: 5px;
+
+    p.h2 {
+        margin-bottom: 50px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.about {
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 12vh;
+
+
+    .h2 {
+        padding: 30px;
+    }
+
+    .row>div {
+        border: 1px solid $paginator;
+        padding: 40px;
+
+
+        &:first-child {
+            background: $gradient;
+            border: none;
+            border-top-left-radius: 30px;
+        }
+
+        &:last-child {
+            border-bottom-right-radius: 30px;
+        }
+    }
+
+    .blocks {
+        text-align: center;
+    }
+
+    .blocks>div {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+.categories {
+    margin-bottom: 12vh;
+
+    .row>div {
+        background-size: cover;
+        height: 600px;
+        text-align: center;
+
+        p {
+            vertical-align: middle;
+            margin-top: 200px;
+        }
+
+        a {
+            color: $dark-text;
+            font-weight: 400;
+            font-size: 24px;
+            text-decoration: none;
+        }
+    }
+
+    .spanie {
+        background-image: url("../img/spanie.png");
+    }
+
+    .posilek {
+        background-image: url("../img/posilek.png");
+    }
+
+    .spacer {
+        background-image: url("../img/spacer.png");
+    }
+
+    .podroz {
+        background-image: url("../img/podroz.png");
+    }
+}
+
+.hero {
+    margin-top: 22vh;
+
+    .about2 {
+        margin-top: 100px;
+        background-image: $gradient;
+        height: 33vh;
+    }
+
+    .aboutPhoto {
+        margin-top: -52px;
+
+        img {
+            width: 102%;
+        }
+    }
+
+    .aboutText {
+        margin-top: 70px;
+
+    }
+}
+
+.product {
+    margin-top: 15vh;
+
+    .products {
+        margin-top: 12vh;
+
+        div {
+            padding: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .productsNav {
+        border-bottom: 1px solid black;
+
+        a:hover {
+            font-weight: 700;
+        }
+
+        a:active {
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: $dark-text;
+        }
+    }
+
+}
+
+.overwiews {
+    margin-top: 22vh;
+
+    .overwiewsCards {
+        margin-top: 2vh;
+
+        .overwiewCard {
+            padding: 30px;
+            border: 1px solid $paginator;
+            border-radius: 5px;
+            max-width: 90%;
+            margin: 15px;
+
+            p {
+                padding: 10px;
+                text-align: justify;
+            }
+
+            img {
+                width: 90%;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+.blog {
+    margin-top: 12vh;
+}
+
+.instagram {
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+
+    div {
+        margin: 0;
+        padding: 0;
+    }
+
+    .likes {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    p {
+        padding: 10px;
+        word-wrap: break-word;
+
+        &:first-child {
+            padding-bottom: 40px;
+        }
+    }
+
+}
+
+footer {
+    background-image: $gradient;
+    padding-bottom: 100px;
+
+    .submenu {
+        margin-top: 100px;
+
+        a {
+            text-decoration: none;
+            color: $dark-text;
+        }
+    }
+
+    .newsletter {
+        background-color: white;
+        border-top-right-radius: 150px;
+        border-bottom-right-radius: 150px;
+        height: 300px;
+        width: 90%;
+        margin-top: 100px;
+
+        form {
+            margin-left: 30px;
+
+            input {
+                border: none;
+                border-bottom: 1px solid $dark-text;
+            }
+        }
+
+        p {
+            padding-left: 30px;
+
+            &:first-child {
+                padding-top: 45px;
+            }
+        }
+
+    }
+}
+
+.checkBox {
+    border: 1px solid $dark-text;
+    border-radius: 40%;
+}
+
+.footerCopy {
+    font-size: 12px;
+    margin-top: 70px;
+    margin-left: 20px;
+}

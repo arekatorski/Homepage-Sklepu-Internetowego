@@ -1,0 +1,22 @@
+$background: #f9f9f9;
+$gradient: linear-gradient(270deg, rgba(187, 212, 240, 0.82) -0.45%, rgba(205, 209, 230, 0.768868) 41.03%, rgba(240, 202, 211, 0.67) 108.72%);
+$hero-bg: transparentize(#F9A4B8, 0.9);
+$action-bg: #bbd4f0;
+
+$categories-hover: transparentize(#f9a4b8, 0.93);
+$benefits-hover: $gradient;
+$blog-hover: $gradient;
+$instagram-hover: transparentize(#ecd9e1, 0.55);
+
+$button-primary: #f0cad3;
+$button-secondary: #bbd4f0;
+
+$left-arrow: #e4e4e4;
+$right-arrow: #bdbdbd;
+$paginator: #9cc1ea;
+$stars: $paginator;
+$footer-line: $gradient;
+$frameworks: $button-secondary;
+$text: #fff;
+$dark-text: #404040;
+$error: #e85050;

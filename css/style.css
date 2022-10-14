@@ -1,0 +1,318 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+body .top {
+  background-image: linear-gradient(270deg, rgba(187, 212, 240, 0.82) -0.45%, rgba(205, 209, 230, 0.768868) 41.03%, rgba(240, 202, 211, 0.67) 108.72%);
+  text-align: center;
+}
+body .top div {
+  padding-top: 8px;
+}
+
+nav {
+  padding: 12px;
+}
+nav a {
+  padding: 10px;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#logo {
+  width: 20%;
+}
+
+#menu {
+  width: 50%;
+  margin-top: 10px;
+}
+
+#options {
+  width: 30%;
+}
+#options div {
+  display: inline;
+  margin: 10px;
+}
+
+.baner {
+  background-color: rgba(249, 164, 184, 0.1);
+  margin-bottom: 12vh;
+}
+.baner img {
+  border-radius: 0 350px 350px 0;
+  width: 90%;
+  height: 60vh;
+}
+.baner .row > div:last-child {
+  padding-top: 8%;
+}
+
+button {
+  border-radius: 30px;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: none;
+  background-color: #f0cad3;
+}
+
+button:hover {
+  background-color: #bbd4f0;
+  color: #fff;
+}
+
+.secondButton {
+  border-radius: 30px;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: none;
+  background-color: #bbd4f0;
+  color: white;
+}
+
+.secondButton:hover {
+  background-color: #f0cad3;
+  color: #404040;
+}
+
+.dogs {
+  margin-bottom: 12vh;
+}
+.dogs .row > div {
+  background-image: url("../img/srednipies.png");
+  background-size: cover;
+  padding-top: 200px;
+  color: white;
+  font-size: 37px;
+  text-align: center;
+  height: 500px;
+}
+.dogs .row > div:first-child {
+  background-image: url("../img/malypies.png");
+}
+.dogs .row > div:last-child {
+  background-image: url("../img/duzypies.png");
+}
+
+.bestsellers {
+  margin-bottom: 12vh;
+  padding: 5px;
+}
+.bestsellers p.h2 {
+  margin-bottom: 50px;
+}
+.bestsellers button {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.bestsellers img {
+  width: 100%;
+}
+
+.about {
+  text-align: center;
+  margin: 5px;
+  margin-bottom: 12vh;
+}
+.about .h2 {
+  padding: 30px;
+}
+.about .row > div {
+  border: 1px solid #9cc1ea;
+  padding: 40px;
+}
+.about .row > div:first-child {
+  background: linear-gradient(270deg, rgba(187, 212, 240, 0.82) -0.45%, rgba(205, 209, 230, 0.768868) 41.03%, rgba(240, 202, 211, 0.67) 108.72%);
+  border: none;
+  border-top-left-radius: 30px;
+}
+.about .row > div:last-child {
+  border-bottom-right-radius: 30px;
+}
+.about .blocks {
+  text-align: center;
+}
+.about .blocks > div {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.categories {
+  margin-bottom: 12vh;
+}
+.categories .row > div {
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+}
+.categories .row > div p {
+  vertical-align: middle;
+  margin-top: 200px;
+}
+.categories .row > div a {
+  color: #404040;
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: none;
+}
+.categories .spanie {
+  background-image: url("../img/spanie.png");
+}
+.categories .posilek {
+  background-image: url("../img/posilek.png");
+}
+.categories .spacer {
+  background-image: url("../img/spacer.png");
+}
+.categories .podroz {
+  background-image: url("../img/podroz.png");
+}
+
+.hero {
+  margin-top: 22vh;
+}
+.hero .about2 {
+  margin-top: 100px;
+  background-image: linear-gradient(270deg, rgba(187, 212, 240, 0.82) -0.45%, rgba(205, 209, 230, 0.768868) 41.03%, rgba(240, 202, 211, 0.67) 108.72%);
+  height: 33vh;
+}
+.hero .aboutPhoto {
+  margin-top: -52px;
+}
+.hero .aboutPhoto img {
+  width: 102%;
+}
+.hero .aboutText {
+  margin-top: 70px;
+}
+
+.product {
+  margin-top: 15vh;
+}
+.product .products {
+  margin-top: 12vh;
+}
+.product .products div {
+  padding: 10px;
+}
+.product .products div img {
+  width: 100%;
+}
+.product .productsNav {
+  border-bottom: 1px solid black;
+}
+.product .productsNav a:hover {
+  font-weight: 700;
+}
+.product .productsNav a:active {
+  font-weight: 700;
+}
+.product .productsNav a {
+  text-decoration: none;
+  color: #404040;
+}
+
+.overwiews {
+  margin-top: 22vh;
+}
+.overwiews .overwiewsCards {
+  margin-top: 2vh;
+}
+.overwiews .overwiewsCards .overwiewCard {
+  padding: 30px;
+  border: 1px solid #9cc1ea;
+  border-radius: 5px;
+  max-width: 90%;
+  margin: 15px;
+}
+.overwiews .overwiewsCards .overwiewCard p {
+  padding: 10px;
+  text-align: justify;
+}
+.overwiews .overwiewsCards .overwiewCard img {
+  width: 90%;
+  margin: 10px;
+}
+
+.blog {
+  margin-top: 12vh;
+}
+
+.instagram {
+  margin-top: 12vh;
+  margin-bottom: 12vh;
+}
+.instagram div {
+  margin: 0;
+  padding: 0;
+}
+.instagram .likes {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.instagram .main {
+  width: 100%;
+}
+.instagram p {
+  padding: 10px;
+  word-wrap: break-word;
+}
+.instagram p:first-child {
+  padding-bottom: 40px;
+}
+
+footer {
+  background-image: linear-gradient(270deg, rgba(187, 212, 240, 0.82) -0.45%, rgba(205, 209, 230, 0.768868) 41.03%, rgba(240, 202, 211, 0.67) 108.72%);
+  padding-bottom: 100px;
+}
+footer .submenu {
+  margin-top: 100px;
+}
+footer .submenu a {
+  text-decoration: none;
+  color: #404040;
+}
+footer .newsletter {
+  background-color: white;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  height: 300px;
+  width: 90%;
+  margin-top: 100px;
+}
+footer .newsletter form {
+  margin-left: 30px;
+}
+footer .newsletter form input {
+  border: none;
+  border-bottom: 1px solid #404040;
+}
+footer .newsletter p {
+  padding-left: 30px;
+}
+footer .newsletter p:first-child {
+  padding-top: 45px;
+}
+
+.checkBox {
+  border: 1px solid #404040;
+  border-radius: 40%;
+}
+
+.footerCopy {
+  font-size: 12px;
+  margin-top: 70px;
+  margin-left: 20px;
+}/*# sourceMappingURL=style.css.map */
