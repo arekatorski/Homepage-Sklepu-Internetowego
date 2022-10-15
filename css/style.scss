@@ -3,13 +3,15 @@
 ::-webkit-scrollbar {
     display: none;
 }
-
+*{
+    box-sizing: border-box;
+}
 body {
 
     padding: 0;
     margin: 0;
     font-family: 'Nunito', sans-serif;
-
+    overflow-x: hidden;
     .top {
         background-image: $gradient;
         text-align: center;
@@ -54,17 +56,12 @@ img {
 .baner {
     background-color: $hero-bg;
     margin-bottom: 12vh;
-
-    img {
-        border-radius: 0 350px 350px 0;
+    img{
+        border-radius:  0 250px 250px 0;
         width: 90%;
-        height: 60vh;
-    }
-
-    .row>div {
-        &:last-child {
-            padding-top: 8%;
-        }
+        height: 100%;
+        max-height: 450px;
+        object-fit: cover;
     }
 }
 
@@ -269,9 +266,12 @@ button:hover {
     }
 
 }
-
+.mainSwiper{
+    overflow: hidden;
+}
 .overwiews {
     margin-top: 22vh;
+    overflow: hidden;
 
     .overwiewsCards {
         margin-top: 2vh;
@@ -346,10 +346,9 @@ footer {
         background-color: white;
         border-top-right-radius: 150px;
         border-bottom-right-radius: 150px;
-        height: 300px;
         width: 90%;
         margin-top: 100px;
-
+        padding: 60px 0;
         form {
             margin-left: 30px;
 
@@ -370,6 +369,16 @@ footer {
     }
 }
 
+.footer{
+    &__social{
+        display: flex;
+        padding: 0;
+        margin: auto 0 0;
+        gap: 20px;
+        list-style: none;
+    }
+}
+
 .checkBox {
     border: 1px solid $dark-text;
     border-radius: 40%;
@@ -378,5 +387,132 @@ footer {
 .footerCopy {
     font-size: 12px;
     margin-top: 70px;
-    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.swiper-navigation{
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        margin: 12px;
+        z-index: 5;
+        img{
+            height: 40px;
+            width: auto;
+        }
+}
+.products{
+    &-next{
+        right: 0;
+        img{
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.blog{
+    &-container{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 40px auto;
+        .article{
+            &:first-child{
+                border-top-left-radius: 80px;
+            }
+            &:last-child{
+                border-bottom-right-radius: 80px;
+            }
+        }
+    }
+}
+.article{
+    border-radius: 5px;
+    border: 1.5px solid #BBD4F0;
+    padding: 20px;
+    .row{
+        align-items: center;
+    }
+}
+.swiper-pagination-bullet{
+    transition: .6s;
+    background-color: transparent !important;
+    border: 1px solid #a6c6eb;
+    opacity: 1;
+    border-radius: 16px;
+    width: 15px;
+    height: 15px;
+
+}
+.swiper-pagination-bullet-active{
+    background-color: #a6c6eb !important;
+    width: 32px;
+    height: 15px;
+}
+.main-slide{
+    width: 100% !important;
+}
+
+
+  
+@media (min-width: 1025px){
+    #article{
+        &1{
+            grid-row-start: 1;
+            grid-column-start: 1;
+         
+            grid-row-end: 2;
+            grid-column-end: 3;
+        }
+        &2{
+            grid-row-start: 1;
+            grid-column-start: 3;
+         
+            grid-row-end: 3;
+            grid-column-end: 5;
+        }
+        &3{
+            grid-row-start: 2;
+            grid-column-start: 1;
+         
+            grid-row-end: 4;
+            grid-column-end: 3;
+        }
+        &4{
+            grid-row-start: 3;
+            grid-column-start: 3;
+         
+            grid-row-end: 4;
+            grid-column-end: 5;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .blog{
+        &-container{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-rows: repeat(4, auto);
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media (max-width: 690px) {
+    .mainSwiper{
+        .d-flex{
+            flex-direction: column;
+            align-items: flex-start !important;
+            .col-md-6:first-child{
+                width: 100%;
+                max-width: 100%;
+            }
+            .col-md-6:last-child{
+                width: 100%;
+                text-align: center;
+                align-items: center;
+                padding: 20px 0;
+            }
+        }
+    }
 }
